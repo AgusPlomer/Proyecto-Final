@@ -21,6 +21,10 @@ body{
 
 h1{
     text-align: center;
+    color: #E21717;
+    font-family: 'Zen Dots', cursive;
+    margin-top: 1rem;
+    margin-bottom: none;
 }
 
  /* CAROUSEL */
@@ -65,10 +69,12 @@ h5{
     display: flex;
     justify-content: center;
     flex-grow: 1;
-    background-color: red;
-    
-    
-    
+    background-color: #E21717;
+       
+}
+
+.barraEntera{
+    background-color: #E21717;
 }
 
 
@@ -84,7 +90,7 @@ a{
 /* FOOTER */
 
 footer{
-    background-color: red;
+    background-color: #E21717;
     display: block;
     
     
@@ -136,13 +142,38 @@ h3{
     
 }
 
-.hijoRow{
-    border: black solid 5px;
-    
-}
 
 /* FIN PRODUCTOS Y TITULOS */
 
+/************************************ SECCION OFERTA ***********************************/
+
+/* TEXTO E IMAGEN DE DESCUENTO */
+
+.apartadoOferta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.imgOferta{
+    width: 13rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    border: black 5px solid;
+    border-radius: 2px;
+}
+
+/* CARDS */
+
+.cardRow{
+    margin: 20px;
+}
+
+.imgOferta{
+    width: 10rem;
+}
 
 
 
