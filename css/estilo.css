@@ -43,12 +43,16 @@ h1{
 
 h5{
     background-color: white;
+    border: black 2px solid;
+    border-radius: 2px;
     color: black;
-    font-family: 'Lobster', cursive;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .parrafoCarousel{
     background-color: black;
+    border: white 2px solid;
+    border-radius: 2px;
     color: white;
     font-family: 'Teko', sans-serif;
 }
@@ -92,6 +96,7 @@ a{
 footer{
     background-color: #E21717;
     display: block;
+    width: 100%;
     
     
 }
@@ -136,10 +141,13 @@ h3{
 
 .imagenesProductos{
     width: 10rem;
-    display: flex;
-    justify-content: center;
-
     
+}
+
+.hijoRow img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
@@ -158,6 +166,7 @@ h3{
 
 .imgOferta{
     width: 13rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
     margin-left: 2rem;
     margin-right: 3rem;
@@ -169,11 +178,64 @@ h3{
 
 .cardRow{
     margin: 20px;
+    border: 4px black solid;
 }
 
 .imgOferta{
     width: 10rem;
 }
+
+
+
+/**************************** SECCION UBICACIÓN ***************************/
+
+.flexUbicacion div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imgUbicacion{
+      width: 40rem;
+    margin-bottom: 2rem;
+    border: 5px black solid;
+    border-radius: 5px;  
+    
+}
+
+.parrafosUbicacion{
+    margin-top: 3rem;
+    text-align: center;
+    font-family: 'DynaPuff', cursive;
+    color: black;
+    
+}
+
+.sectionUbicacion{
+    border: 3px black solid;
+    border-radius: 3px;
+    margin:2rem ;
+}
+
+/************************** SECCIÓN NOSOTROS  ****************************/
+.parrafoNosotros{
+    margin-top: 3rem;
+    text-align: center;
+    font-family: 'DynaPuff', cursive;
+    color: black;  
+   
+}
+
+.sectionNosotros{
+    border: 3px black solid;
+    border-radius: 3px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
 
 
 
