@@ -50,11 +50,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+
+      
   </head>
 
-  <h1>UBICACIÓN</h1>
+  <h1>CONTACTO</h1>
 
   <body class="container-fluid">
     <!-- NAV BAR -->
@@ -85,7 +86,7 @@
                 >Inicio</a
               >
               <a class="nav-link" href="/html/ofertas.html">Ofertas</a>
-              <a class="nav-link" href="/html/ubicacion.html">Ubicación</a>
+              <a class="nav-link" href="/html/ubicacion.html">Ubicacion</a>
               <a class="nav-link" href="/html/nosotros.html">Nosotros</a>
               <a class="nav-link" href="/html/contacto.html">Contacto</a>
             </div>
@@ -95,44 +96,86 @@
     </header>
 
     <main>
-      <section>
-        <div>
-          <h3>¿Donde podes encontrarnos?</h3>
-        </div>
+        <section>
+            <div>
+                <h3>¡Nos interesa conocer un poco más a nuestros clientes!</h3>
+            </div>
+            <div>
+                <p class="parrafoNosotros">Queremos conocer tu experiencia dentro de nuestra tienda, y que nos comuniques cualquier inconvenienten que hayas podido tener en ella.
+                    Debajo podras registrar tus datos y comunicarte con nosotros mediante el siguiente formulario de contacto, estaremos respondiendo consultas lo mas pronto posible, ¡muchas gracias!</p>
+            </div>
+        </section>
 
-        <div class="flexUbicacion">
-          <div class="hijoflexUbicacion">
-            <img
-              class="imgUbicacion img-fluid"
-              src="/img/google-maps.png"
-              alt="ubicacion-maps"
-            />
-          </div>
-          <div>
-            <h4 class="direccion">5014 Nueva Cordóba, Av. General Paz 123</h4>
-          </div>
-        </div>
-      </section>
+        <section>
+            <form>
+            <div class="row g-3 align-items-center forms forms">
+                <div class="col-auto">
+                  <label for="inputPassword6" class="col-form-label">Nombre</label>
+                </div>
+                <div class="col-auto">
+                  <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+                <div class="col-auto">
+                  <span id="passwordHelpInline" class="form-text">
+                    Ingrese su nombre/s.
+                  </span>
+                </div>
+              </div>
 
-      <section class="sectionUbicacion">
-        <div>
-          <p class="parrafosUbicacion">
-            Recordá que también realizamos envíos a toda la ciudad de Córdoba
-            (costo del envío a cargo del comprador), y A TODO EL PAÍS (con una
-            comprar superior a los $15.000 el envío es TOTALMENTE GRATIS)
-          </p>
-        </div>
-        <div>
-          <p class="parrafosUbicacion">
-            El envío puede ser a domicilio (costo adicional según la distancia)
-            o también se podra retirar en las sucursales de Correo Argentino,
-            OCA y Andreani
-          </p>
-        </div>
-      </section>
+              <div class="row g-3 align-items-center forms">
+                <div class="col-auto">
+                  <label for="inputPassword6" class="col-form-label">Apellido</label>
+                </div>
+                <div class="col-auto">
+                  <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+                <div class="col-auto">
+                  <span id="passwordHelpInline" class="form-text">
+                    Ingrese su apellido/s.
+                  </span>
+                </div>
+              </div>
+
+              <div class="row g-3 align-items-center forms">
+                <div class="col-auto">
+                  <label for="inputPassword6" class="col-form-label">Email</label>
+                </div>
+                <div class="col-auto">
+                  <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+                <div class="col-auto">
+                  <span id="passwordHelpInline" class="form-text">
+                    Ingrese su correo electronico.
+                  </span>
+                </div>
+              </div>
+
+              
+                <fieldset disabled>
+
+                    <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Pais</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option>Elija su pais</option>
+                    </select>
+        
+                  <div class="mb-3 divCiudad">
+                    <label for="disabledSelect" class="form-label">Ciudad</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option>Elija su ciudad</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                   </label>
+                    </div>
+                    <input class="form-control" type="text" value="Deje su mensaje aquí..." aria-label="readonly input example" readonly>
+                  </div>
+                  <button type="submit" class="btn btn-primary boton">Enviar</button>
+                </fieldset>
+              </form>
+
+        </section>
     </main>
-
-     <!-- FOOTER -->
 
     <footer class="footer">
         <div class="contenedorFooter">
@@ -163,6 +206,6 @@
   
       <!-- ICONO FOOTER -->
       <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
-    
-  </body>
-</html>
+    </body>
+  </html>
+  

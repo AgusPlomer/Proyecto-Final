@@ -217,6 +217,11 @@ h3{
     margin:2rem ;
 }
 
+h4{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 /************************** SECCIÓN NOSOTROS  ****************************/
 .parrafoNosotros{
     margin-top: 3rem;
@@ -231,6 +236,23 @@ h3{
     border-radius: 3px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+/************************* SECCIÓN FORMULARIO  ******************************/
+.forms{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.divCiudad{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.boton{
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    
 }
 
 
