@@ -1,271 +1,183 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    list-style-type: none;
-}    
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+  list-style-type: none; }
 
-body{
-    background-color: white
-    
-}
+body {
+  background-color: white; }
 
+.logo {
+  width: 4rem; }
 
-.logo{
-    width: 4rem;
-}
+.imgPrincipal {
+  width: 20rem; }
 
+h1 {
+  text-align: center;
+  color: #E21717;
+  font-family: 'Zen Dots', cursive;
+  margin-top: 1rem;
+  margin-bottom: none; }
 
-.imgPrincipal{
-    width: 20rem;
-}
+/* CAROUSEL */
+.formaCarousel {
+  padding-top: 30px;
+  margin: auto; }
 
-h1{
-    text-align: center;
-    color: #E21717;
-    font-family: 'Zen Dots', cursive;
-    margin-top: 1rem;
-    margin-bottom: none;
-}
+.imgCarousel {
+  width: 100%;
+  height: 100%; }
 
- /* CAROUSEL */
+h5 {
+  background-color: white;
+  border: black 2px solid;
+  border-radius: 2px;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif; }
 
-.formaCarousel{
-    padding-top: 30px;
-    margin: auto;
-    
-}
+.parrafoCarousel {
+  background-color: black;
+  border: white 2px solid;
+  border-radius: 2px;
+  color: white;
+  font-family: 'Teko', sans-serif; }
 
-.imgCarousel{
-    width: 100%;
-    height: 100%;
-    
-}
-
-h5{
-    background-color: white;
-    border: black 2px solid;
-    border-radius: 2px;
-    color: black;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.parrafoCarousel{
-    background-color: black;
-    border: white 2px solid;
-    border-radius: 2px;
-    color: white;
-    font-family: 'Teko', sans-serif;
-}
-
-#carouselExampleCaptions{
-    width: 40rem;
-    height: 25rem;
-    margin: auto;
-    
-}
+#carouselExampleCaptions {
+  width: 40rem;
+  height: 25rem;
+  margin: auto; }
 
 /* FIN CAROUSEL */
-
-
 /* BARRA DE NAVEGACIÓN */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: #E21717; }
 
-.navbar-nav{
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    background-color: #E21717;
-       
-}
+.barraEntera {
+  background-color: #E21717; }
 
-.barraEntera{
-    background-color: #E21717;
-}
-
-
-a{
-    font-family: 'Lobster', cursive;
-    display: flex;
-    margin: 0,3rem;
-    padding: 1rem;
-}
+a {
+  font-family: 'Lobster', cursive;
+  display: flex;
+  margin: 0,3rem;
+  padding: 1rem; }
 
 /* FIN BARRA DE NAVEGACIÓN */
-
 /* FOOTER */
+footer {
+  background-color: #E21717;
+  display: block;
+  width: 100%; }
 
-footer{
-    background-color: #E21717;
-    display: block;
-    width: 100%;
-    
-    
-}
+.iconoFooter {
+  font-size: 4rem;
+  color: black; }
 
-.iconoFooter{
-    font-size: 4rem;
-    color: black;
-}
+.contenedorFooter {
+  display: flex;
+  justify-content: space-evenly; }
 
-.contenedorFooter{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.textoFooter{
-    text-align: center;
-    margin: auto;
-    font-family: 'Lobster', cursive;
-    color: black;
-    
-}
+.textoFooter {
+  text-align: center;
+  margin: auto;
+  font-family: 'Lobster', cursive;
+  color: black; }
 
 /* FIN FOOTER */
-
 /* PRODUCTOS Y TITULOS */
+h2 {
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  color: black; }
 
-h2{
-    font-family: 'Teko', sans-serif;
-    text-align: center;
-    color: black;
-    
-}
+h3 {
+  text-align: center;
+  margin: 50px;
+  font-family: 'DynaPuff', cursive;
+  color: black; }
 
-h3{
-    text-align: center;
-    margin: 50px;
-    font-family: 'DynaPuff', cursive;
-    color: black
-    
-}
+.imagenesProductos {
+  width: 10rem; }
 
-
-.imagenesProductos{
-    width: 10rem;
-    
-}
-
-.hijoRow img{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
+.hijoRow img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 /* FIN PRODUCTOS Y TITULOS */
-
 /************************************ SECCION OFERTA ***********************************/
-
 /* TEXTO E IMAGEN DE DESCUENTO */
+.apartadoOferta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row; }
 
-.apartadoOferta{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-.imgOferta{
-    width: 13rem;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    margin-right: 3rem;
-    border: black 5px solid;
-    border-radius: 2px;
-}
+.imgOferta {
+  width: 13rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 3rem;
+  border: black 5px solid;
+  border-radius: 2px; }
 
 /* CARDS */
+.cardRow {
+  margin: 20px;
+  border: 4px black solid; }
 
-.cardRow{
-    margin: 20px;
-    border: 4px black solid;
-}
-
-.imgOferta{
-    width: 10rem;
-}
-
-
+.imgOferta {
+  width: 10rem; }
 
 /**************************** SECCION UBICACIÓN ***************************/
+.flexUbicacion div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
-.flexUbicacion div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+.imgUbicacion {
+  width: 40rem;
+  margin-bottom: 2rem;
+  border: 5px black solid;
+  border-radius: 5px; }
 
-.imgUbicacion{
-      width: 40rem;
-    margin-bottom: 2rem;
-    border: 5px black solid;
-    border-radius: 5px;  
-    
-}
+.parrafosUbicacion {
+  margin-top: 3rem;
+  text-align: center;
+  font-family: 'DynaPuff', cursive;
+  color: black; }
 
-.parrafosUbicacion{
-    margin-top: 3rem;
-    text-align: center;
-    font-family: 'DynaPuff', cursive;
-    color: black;
-    
-}
+.sectionUbicacion {
+  border: 3px black solid;
+  border-radius: 3px;
+  margin: 2rem; }
 
-.sectionUbicacion{
-    border: 3px black solid;
-    border-radius: 3px;
-    margin:2rem ;
-}
-
-h4{
-    color: black;
-    font-family: 'Josefin Sans', sans-serif;
-}
+h4 {
+  color: black;
+  font-family: 'Josefin Sans', sans-serif; }
 
 /************************** SECCIÓN NOSOTROS  ****************************/
-.parrafoNosotros{
-    margin-top: 3rem;
-    text-align: center;
-    font-family: 'DynaPuff', cursive;
-    color: black;  
-   
-}
+.parrafoNosotros {
+  margin-top: 3rem;
+  text-align: center;
+  font-family: 'DynaPuff', cursive;
+  color: black; }
 
-.sectionNosotros{
-    border: 3px black solid;
-    border-radius: 3px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
+.sectionNosotros {
+  border: 3px black solid;
+  border-radius: 3px;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 /************************* SECCIÓN FORMULARIO  ******************************/
-.forms{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
+.forms, .divCiudad {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
-.divCiudad{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.boton{
-    margin-bottom: 4rem;
-    margin-top: 2rem;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.boton {
+  margin-bottom: 4rem;
+  margin-top: 2rem; }
