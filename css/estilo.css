@@ -23,7 +23,9 @@ h1 {
 /* CAROUSEL */
 .formaCarousel {
   padding-top: 30px;
-  margin: auto; }
+  margin: auto;
+  
+}
 
 .imgCarousel {
   width: 100%;
@@ -44,9 +46,10 @@ h5 {
   font-family: 'Teko', sans-serif; }
 
 #carouselExampleCaptions {
-  width: 40rem;
-  height: 25rem;
-  margin: auto; }
+  width: auto;
+  height: auto;
+  margin: auto; 
+}
 
 /* FIN CAROUSEL */
 /* BARRA DE NAVEGACIÓN */
@@ -77,8 +80,9 @@ footer {
   color: black; }
 
 .contenedorFooter {
-  display: flex;
-  justify-content: space-evenly; }
+   display: flex; 
+  justify-content: space-evenly;
+  }  
 
 .textoFooter {
   text-align: center;
@@ -100,13 +104,17 @@ h3 {
   color: black; }
 
 .imagenesProductos {
-  width: 10rem; }
+  width: 10rem;
+  margin: auto ; 
+}
 
 .hijoRow img {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center; 
+}
 
+  
 /* FIN PRODUCTOS Y TITULOS */
 /************************************ SECCION OFERTA ***********************************/
 /* TEXTO E IMAGEN DE DESCUENTO */
@@ -114,24 +122,42 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row; }
+  flex-direction: row; 
+  margin: auto;
 
-.imgOferta {
-  width: 13rem;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  margin-left: 2rem;
-  margin-right: 3rem;
+}
+
+
+.imgDescuento {
+  width: 12rem;
+  margin: auto;
   border: black 5px solid;
-  border-radius: 2px; }
+  border-radius: 2px; 
+
+}
 
 /* CARDS */
 .cardRow {
   margin: 20px;
-  border: 4px black solid; }
+  border: 4px black solid; 
+}
 
-.imgOferta {
-  width: 10rem; }
+.imgOfertas{
+  width: 12rem;
+  height: 10rem;
+  margin: auto;
+}
+
+.card-body{
+  margin: auto;
+  padding: auto;
+}
+
+.row{
+  margin: auto;
+}
+
+
 
 /**************************** SECCION UBICACIÓN ***************************/
 .flexUbicacion div {

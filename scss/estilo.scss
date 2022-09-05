@@ -33,12 +33,13 @@
   
   .formaCarousel {
     padding-top: 30px;
-    margin: auto;
+    margin: 2em;
   }
   
   .imgCarousel {
     width: 100%;
     height: 100%;
+    margin: auto;
   }
   
   h5 {
@@ -58,10 +59,13 @@
   }
   
   #carouselExampleCaptions {
-    width: 40rem;
-    height: 25rem;
+    width: 100%;
+    height: 100%;
     margin: auto;
+    padding: auto;
   }
+
+  
   
   /* FIN CAROUSEL */
   
@@ -131,13 +135,10 @@
   
   .imagenesProductos {
     width: 10rem;
+    margin-right: 2rem;
   }
   
-  .hijoRow img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+  
   
   /* FIN PRODUCTOS Y TITULOS */
   
@@ -233,3 +234,6 @@
     margin-bottom: 4rem;
     margin-top: 2rem;
   }
+
+
+ 
