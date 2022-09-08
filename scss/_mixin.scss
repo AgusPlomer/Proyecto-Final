@@ -1,0 +1,14 @@
+/*MIXIN*/ 
+
+@mixin parrafos {
+    
+  margin-top: 3rem;
+  text-align: center;
+  font-family: 'DynaPuff', cursive;
+  color: black;
+    
+}
+
+.parrafosGenerales{
+    @include parrafos;
+}

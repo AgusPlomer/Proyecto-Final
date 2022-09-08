@@ -23,9 +23,7 @@ h1 {
 /* CAROUSEL */
 .formaCarousel {
   padding-top: 30px;
-  margin: auto;
-  
-}
+  margin: auto; }
 
 .imgCarousel {
   width: 100%;
@@ -48,8 +46,7 @@ h5 {
 #carouselExampleCaptions {
   width: auto;
   height: auto;
-  margin: auto; 
-}
+  margin: auto; }
 
 /* FIN CAROUSEL */
 /* BARRA DE NAVEGACIÓN */
@@ -80,9 +77,8 @@ footer {
   color: black; }
 
 .contenedorFooter {
-   display: flex; 
-  justify-content: space-evenly;
-  }  
+  display: flex;
+  justify-content: space-evenly; }
 
 .textoFooter {
   text-align: center;
@@ -105,16 +101,13 @@ h3 {
 
 .imagenesProductos {
   width: 10rem;
-  margin: auto ; 
-}
+  margin: auto; }
 
 .hijoRow img {
   display: flex;
   flex-direction: row;
-  justify-content: center; 
-}
+  justify-content: center; }
 
-  
 /* FIN PRODUCTOS Y TITULOS */
 /************************************ SECCION OFERTA ***********************************/
 /* TEXTO E IMAGEN DE DESCUENTO */
@@ -122,42 +115,31 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row; 
-  margin: auto;
-
-}
-
+  flex-direction: row;
+  margin: auto; }
 
 .imgDescuento {
   width: 12rem;
   margin: auto;
   border: black 5px solid;
-  border-radius: 2px; 
-
-}
+  border-radius: 2px; }
 
 /* CARDS */
 .cardRow {
   margin: 20px;
-  border: 4px black solid; 
-}
+  border: 4px black solid; }
 
-.imgOfertas{
+.imgOfertas {
   width: 12rem;
   height: 10rem;
+  margin: auto; }
+
+.card-body {
   margin: auto;
-}
+  padding: auto; }
 
-.card-body{
-  margin: auto;
-  padding: auto;
-}
-
-.row{
-  margin: auto;
-}
-
-
+.row {
+  margin: auto; }
 
 /**************************** SECCION UBICACIÓN ***************************/
 .flexUbicacion div {
@@ -171,27 +153,12 @@ h3 {
   border: 5px black solid;
   border-radius: 5px; }
 
-.parrafosUbicacion {
-  margin-top: 3rem;
-  text-align: center;
-  font-family: 'DynaPuff', cursive;
-  color: black; }
-
 .sectionUbicacion {
   border: 3px black solid;
   border-radius: 3px;
   margin: 2rem; }
 
-h4 {
-  color: black;
-  font-family: 'Josefin Sans', sans-serif; }
-
 /************************** SECCIÓN NOSOTROS  ****************************/
-.parrafoNosotros {
-  margin-top: 3rem;
-  text-align: center;
-  font-family: 'DynaPuff', cursive;
-  color: black; }
 
 .sectionNosotros {
   border: 3px black solid;
@@ -207,3 +174,23 @@ h4 {
 .boton {
   margin-bottom: 4rem;
   margin-top: 2rem; }
+
+/*MAP GET*/
+h4 {
+  color: black; }
+
+/*EXTEND*/
+.primerEstilo, .segundoEstilo {
+  color: black;
+  background-color: white;
+  width: 3rem; }
+
+.segundoEstilo {
+  font-size: 20px; }
+
+/*MIXIN*/
+.parrafosGenerales {
+  margin-top: 3rem;
+  text-align: center;
+  font-family: 'DynaPuff', cursive;
+  color: black; }

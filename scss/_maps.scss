@@ -1,0 +1,7 @@
+/*MAP GET*/
+
+$estiloh4: (color: black);
+
+h4{
+    color: map-get($estiloh4, color);
+}

@@ -1,0 +1,17 @@
+/*EXTEND*/
+
+.primerEstilo{
+    color: black;
+    background-color: white;
+    width: 3rem;
+}
+
+.segundoEstilo{
+    @extend .primerEstilo;
+    font-size: 20px;
+}
+
+
+
+
+    
