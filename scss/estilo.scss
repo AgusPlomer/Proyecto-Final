@@ -55,9 +55,10 @@ h5 {
 }
 
 #carouselExampleCaptions {
-  width: auto;
+  width: 45rem;
   height: auto;
   margin: auto;
+  
 }
 
 /* FIN CAROUSEL */
@@ -68,6 +69,7 @@ h5 {
   justify-content: center;
   flex-grow: 1;
   background-color: #E21717;
+  
 }
 
 .barraEntera {
@@ -75,10 +77,10 @@ h5 {
 }
 
 a {
-  font-family: 'Lobster', cursive;
+  font-family: 'Bebas Neue', cursive;
   display: flex;
-  margin: 0,3rem;
-  padding: 1rem;
+  width: 7rem;
+  
 }
 
 /* FIN BARRA DE NAVEGACIÓN */
@@ -171,8 +173,10 @@ h3 {
   padding: auto;
 }
 
-.row {
-  margin: auto;
+.ubicacionCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /**************************** SECCION UBICACIÓN ***************************/
@@ -232,6 +236,22 @@ h3 {
   margin-bottom: 4rem;
   margin-top: 2rem;
 }
+
+/*MOBILE*/
+@media screen and(max-width: 850px){
+  #carouselExampleCaptions{
+    width: auto;
+    height: auto;
+    margin: auto;
+    
+  }
+
+  .imgDescuento{
+    display: none;
+  }
+}
+  
+
 
 @import "maps";
 @import "extend";

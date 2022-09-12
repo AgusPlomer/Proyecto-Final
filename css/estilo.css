@@ -44,7 +44,7 @@ h5 {
   font-family: 'Teko', sans-serif; }
 
 #carouselExampleCaptions {
-  width: auto;
+  width: 45rem;
   height: auto;
   margin: auto; }
 
@@ -60,10 +60,9 @@ h5 {
   background-color: #E21717; }
 
 a {
-  font-family: 'Lobster', cursive;
+  font-family: 'Bebas Neue', cursive;
   display: flex;
-  margin: 0,3rem;
-  padding: 1rem; }
+  width: 7rem; }
 
 /* FIN BARRA DE NAVEGACIÓN */
 /* FOOTER */
@@ -138,8 +137,10 @@ h3 {
   margin: auto;
   padding: auto; }
 
-.row {
-  margin: auto; }
+.ubicacionCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 /**************************** SECCION UBICACIÓN ***************************/
 .flexUbicacion div {
@@ -153,12 +154,23 @@ h3 {
   border: 5px black solid;
   border-radius: 5px; }
 
+.parrafosUbicacion {
+  margin-top: 3rem;
+  text-align: center;
+  font-family: 'DynaPuff', cursive;
+  color: black; }
+
 .sectionUbicacion {
   border: 3px black solid;
   border-radius: 3px;
   margin: 2rem; }
 
 /************************** SECCIÓN NOSOTROS  ****************************/
+.parrafoNosotros {
+  margin-top: 3rem;
+  text-align: center;
+  font-family: 'DynaPuff', cursive;
+  color: black; }
 
 .sectionNosotros {
   border: 3px black solid;
@@ -174,6 +186,15 @@ h3 {
 .boton {
   margin-bottom: 4rem;
   margin-top: 2rem; }
+
+/*MOBILE*/
+@media screen and (max-width: 850px) {
+  #carouselExampleCaptions {
+    width: auto;
+    height: auto;
+    margin: auto; }
+  .imgDescuento {
+    display: none; } }
 
 /*MAP GET*/
 h4 {
