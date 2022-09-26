@@ -26,6 +26,7 @@ h1 {
   margin-bottom: none;
 }
 
+
 /* CAROUSEL */
 
 .formaCarousel {
@@ -81,6 +82,7 @@ a {
   display: flex;
   width: 7rem;
   
+  
 }
 
 /* FIN BARRA DE NAVEGACIÓN */
@@ -90,16 +92,23 @@ footer {
   background-color: #E21717;
   display: block;
   width: 100%;
+  
+
 }
 
 .iconoFooter {
-  font-size: 4rem;
+  font-size: 3rem;
   color: black;
+  display: flex;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
 }
 
 .contenedorFooter {
   display: flex;
-  justify-content: space-evenly;
+  
 }
 
 .textoFooter {
@@ -116,6 +125,7 @@ h2 {
   font-family: 'Teko', sans-serif;
   text-align: center;
   color: black;
+  background-color: #E21717;
 }
 
 h3 {
@@ -128,6 +138,11 @@ h3 {
 .imagenesProductos {
   width: 10rem;
   margin: auto;
+  
+}
+
+.hijoRow{
+  margin-bottom: 6rem;
 }
 
 .hijoRow img {
@@ -146,6 +161,9 @@ h3 {
   justify-content: space-between;
   flex-direction: row;
   margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
 }
 
 .imgDescuento {
@@ -178,6 +196,31 @@ h3 {
   flex-direction: row;
   justify-content: center;
 }
+
+.btn{
+  width: 10rem;
+  margin: auto;
+  background-color: #E21717;
+  display: flex;
+  justify-content: center;
+
+}
+
+.card-title{
+  display: flex;
+  justify-content: center;
+  font-family: 'Bebas Neue', cursive;
+  
+}
+
+.card-text{
+  display: flex;
+  justify-content: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+  
+  
+
 
 /**************************** SECCION UBICACIÓN ***************************/
 
@@ -249,6 +292,24 @@ h3 {
   .imgDescuento{
     display: none;
   }
+
+  .iconoFooter{
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    
+  }
+
+  .textoFooter{
+    font-size: 1rem;
+    
+    
+  }
+
+  .parrafosGenerales{
+    margin: 2rem
+  }
+  
 }
   
 
