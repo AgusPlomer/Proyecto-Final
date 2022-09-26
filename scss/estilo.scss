@@ -6,8 +6,11 @@
   list-style-type: none;
 }
 
+$color-principal:#E21717;
+$color-secundario: white;
+
 body {
-  background-color: white;
+  background-color: $color-secundario;
 }
 
 .logo {
@@ -20,7 +23,7 @@ body {
 
 h1 {
   text-align: center;
-  color: #E21717;
+  color: $color-principal;
   font-family: 'Zen Dots', cursive;
   margin-top: 1rem;
   margin-bottom: none;
@@ -40,7 +43,7 @@ h1 {
 }
 
 h5 {
-  background-color: white;
+  background-color: $color-secundario;
   border: black 2px solid;
   border-radius: 2px;
   color: black;
@@ -49,9 +52,9 @@ h5 {
 
 .parrafoCarousel {
   background-color: black;
-  border: white 2px solid;
+  border: $color-secundario 2px solid;
   border-radius: 2px;
-  color: white;
+  color: $color-secundario;
   font-family: 'Teko', sans-serif;
 }
 
@@ -69,12 +72,12 @@ h5 {
   display: flex;
   justify-content: center;
   flex-grow: 1;
-  background-color: #E21717;
+  background-color: $color-principal;
   
 }
 
 .barraEntera {
-  background-color: #E21717;
+  background-color: $color-principal;
 }
 
 a {
@@ -89,7 +92,7 @@ a {
 /* FOOTER */
 
 footer {
-  background-color: #E21717;
+  background-color: $color-principal;
   display: block;
   width: 100%;
   
@@ -125,7 +128,7 @@ h2 {
   font-family: 'Teko', sans-serif;
   text-align: center;
   color: black;
-  background-color: #E21717;
+  background-color: $color-principal;
 }
 
 h3 {
@@ -142,7 +145,7 @@ h3 {
 }
 
 .hijoRow{
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
 .hijoRow img {
@@ -200,7 +203,7 @@ h3 {
 .btn{
   width: 10rem;
   margin: auto;
-  background-color: #E21717;
+  background-color: $color-principal;
   display: flex;
   justify-content: center;
 
