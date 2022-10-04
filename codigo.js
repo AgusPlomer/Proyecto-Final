@@ -50,7 +50,13 @@ while(prendas != "S"){
   prendas = prompt(
     "ingrese el tipo de indumentaria que usted desea comprar, para confirmarle si disponemos de stock o no, los filtros correctos son PANTALONES, ZAPATILLAS, GORRAS, GORROS, REMERAS, RIÑONERAS y MEDIAS. Si desea salir presione (S)"
   );
+
+}
+
+function calcCuota (cantCuota){
+  let interCuota = 10;
+  console.log("si desea pagar en " +cantCuota+ "cuota/s, el valor de cada una tendra un recargo de " + interCuota + "%.")
 }
  
-
+calcCuota(parseInt(prompt("Ingresa la cantidad de cuotas en las que desea pagar")));
  
