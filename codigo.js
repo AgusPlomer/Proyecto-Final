@@ -8,27 +8,49 @@ console.log("el nombre de usuario que usted ha ingresado es:" + nombre);
 let contrasenia = prompt("Ingrese la contraseña que desea colocar a su cuenta");
 console.log("la contraseña que usted ha ingresado es:" + contrasenia);
 
-let confirmacion = prompt(
-  "¿Desea confirmar que los datos que ha ingresado son correctos? En caso de que si, presione la letra (S) para continuar, y en caso de querer volver a cargarlos presione la tecla (N)"
+let prendas = prompt(
+  "ingrese el tipo de indumentaria que usted desea comprar, para confirmarle si disponemos de stock o no, los filtros correctos son PANTALONES, ZAPATILLAS, GORRAS, GORROS, REMERAS, RIÑONERAS y MEDIAS. Si desea salir presione (S)"
 );
-if (confirmacion == "S") {
-  alert("Ya casi puedes navegar por Urban Style, solo queda un paso");
-  let productos = prompt(
-    "por ultimo, le solicitaremos que escriba los productos que sean de su agrado o que este buscando para que aparezcan de manera mas rapida como recomendacion. Presione (S) para salir"
-  );
-  while (productos != "S") {
-    console.log(productos);
-    productos = prompt("ingresa otro producto, o presiona (S) para salir");
-    (productos == "S");
-      alert(
-        "muchas gracias por visitarnos, ante cualquier consulta puedes comunicarte con nosotros mediante el apartado de contacto!"
-      );
-} 
-} else confirmacion == "N";
-{
-  console.log(
-    "Deberas recargar tus datos, presiona F5 para volver a intentarlo."
+
+while(prendas != "S"){
+   switch (prendas) {
+     case "PANTALONES":
+      alert("si disponemos de pantalones");
+      break;
+      
+     case "GORRAS":
+        alert("si disponemos de gorras");
+        break;
+        
+     case "GORROS":
+      alert("si disponemos de gorros");
+      break;
+    
+     case "RIÑONERAS":
+      alert("si disponemos de riñoneras");
+      break;
+      
+     case "REMERAS":
+      alert("si disponemos de remeras");
+      break;
+      
+     case "MEDIAS":
+      alert("si disponemos de medias");
+      break; 
+    
+     case "ZAPATILLAS":
+        alert("si disponemos de zapatillas");
+        break;
+
+     default:
+      alert("por el momento no disponemos stock de lo que usted ha solicitado, pero pronto ingresara")
+       break;
+
+  }
+  prendas = prompt(
+    "ingrese el tipo de indumentaria que usted desea comprar, para confirmarle si disponemos de stock o no, los filtros correctos son PANTALONES, ZAPATILLAS, GORRAS, GORROS, REMERAS, RIÑONERAS y MEDIAS. Si desea salir presione (S)"
   );
 }
+ 
 
-
+ 
