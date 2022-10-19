@@ -10,7 +10,9 @@ console.log("la contraseña que usted ha ingresado es:" + contrasenia);
 
 let prendas = prompt(
   "ingrese el tipo de indumentaria que usted desea comprar, para confirmarle si disponemos de stock o no, los filtros correctos son PANTALONES, ZAPATILLAS, GORRAS, GORROS, REMERAS, RIÑONERAS y MEDIAS. Si desea salir presione (S)"
-);
+  )
+
+  console.log("usted pulso la tecla "+ prendas.toUpperCase() +" para salir del apartado de selección de productos")
 
 class Producto {
   constructor(prenda,marca,precio){
@@ -25,7 +27,7 @@ class Producto {
   
 }
 
-while(prendas != "S"){
+while(prendas.toUpperCase() != "S"){
    switch (prendas) {
      case "PANTALONES":
       alert("si disponemos de pantalones")
@@ -80,13 +82,6 @@ while(prendas != "S"){
 
 }
 
-function calcCuota (cantCuota){
-  let interCuota = 10;
-  console.log("si desea pagar en " +cantCuota+ "cuota/s, el valor de cada una tendra un recargo de " + interCuota + "%.")
-}
- 
-calcCuota(parseInt(prompt("Ingresa la cantidad de cuotas en las que desea pagar")));
-
 //top de usuarios mas longevos registrados
 
 const usuariosLongevos = ["Tomas Gutierrez", "Plomer Agustín", "Matias Maldonado", "Sergio Aguilera", "Samuel Baez", "Santino Guzman"]
@@ -102,25 +97,71 @@ for(let i=0; i<usuariosLongevos.length; i++){
   console.log(usuariosLongevos[i]);
 }
 
+const tarjetas=[
+  {
+    empresa:"Naranja",
+    tipo:"Debito",
+    recargo: 0
 
+  },
+  {
+    empresa:"Naranja",
+    tipo:"Credito",
+    recargo: 15
 
+  },
+  {
+    empresa:"Bancor",
+    tipo:"Debito",
+    recargo: 0
+
+  },
+  {
+    empresa:"Bancor",
+    tipo:"Credito",
+    recargo: 10
+
+  },
+  {
+    empresa:"Supervielle",
+    tipo:"Debito",
+    recargo: 0
+
+  },
+  {
+    empresa:"Superville",
+    tipo:"Credito",
+    recargo: 20
+
+  },
+  {
+    empresa:"Santander",
+    tipo:"Debito",
+    recargo: 0
+
+  },
+  {
+    empresa:"Santander",
+    tipo:"Credito",
+    recargo: 30
+
+  },
+  {
+    empresa:"HSBC",
+    tipo:"Debito",
+    recargo: 0
+
+  },
+  {
+    empresa:"HSBC",
+    tipo:"Credito",
+    recargo: 5
+
+  },
+]
+
+tarjetas.forEach((tarjeta) => console.log("Recibimos como medio de pago las siguientes tarjetas: " + tarjeta.empresa + ", " + tarjeta.tipo))
 
 /*
-const prenda1 = new Producto("Remeras", "Nike", "2500");
-const prenda2 = new Producto("Pantalones", "Levis", "5200");
-const prenda3 = new Producto("Zapatillas", "Jordan", "30000");
-const prenda4 = new Producto("Gorras", "Nike", "2000");
-const prenda5 = new Producto("Gorros", "Nike", "1500");
-const prenda6 = new Producto("Riñoneras", "Levis", "2300");
-const prenda7 = new Producto("Medias", "Nike", "900");
-
-
-console.log ("el valor total de la " +prenda1.prenda+ "(incluyendo iva) es de: " + prenda1.sumarIva());
-console.log ("el valor total de la " +prenda2.prenda+ "(incluyendo iva) es de: " + prenda2.sumarIva());
-console.log ("el valor total de la " +prenda3.prenda+ "(incluyendo iva) es de: " + prenda3.sumarIva());
-console.log ("el valor total de la " +prenda4.prenda+ "(incluyendo iva) es de: " + prenda4.sumarIva());
-console.log ("el valor total de la " +prenda5.prenda+ "(incluyendo iva) es de: " + prenda5.sumarIva());
-console.log ("el valor total de la " +prenda6.prenda+ "(incluyendo iva) es de: " + prenda6.sumarIva());
-console.log ("el valor total de la " +prenda7.prenda+ "(incluyendo iva) es de: " + prenda7.sumarIva());
-console.log ("el valor total de la " +prenda8.prenda+ "(incluyendo iva) es de: " + prenda8.sumarIva());
-*/
+const tarjetasMenorRecargo = tarjetas.filter((tarjeta) => tarjeta.recargo <= 15);
+console.log("nuestras tarjetas con menor recargo y más beneficios son: "+ tarjetasMenorRecargo +", con un recargo del: " + tarjetas.recargo);
