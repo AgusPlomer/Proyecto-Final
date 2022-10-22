@@ -164,4 +164,4 @@ tarjetas.forEach((tarjeta) => console.log("Recibimos como medio de pago las sigu
 
 /*
 const tarjetasMenorRecargo = tarjetas.filter((tarjeta) => tarjeta.recargo <= 15);
-console.log("nuestras tarjetas con menor recargo y más beneficios son: "+ tarjetasMenorRecargo +", con un recargo del: " + tarjetas.recargo);
+console.log("nuestras tarjetas con menor recargo y más beneficios son: "+ tarjetasMenorRecargo +", con un recargo del: " + tarjetas.recargo);*/
