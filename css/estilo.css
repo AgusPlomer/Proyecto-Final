@@ -213,6 +213,9 @@ h3 {
 .boton {
   margin-bottom: 4rem;
   margin-top: 2rem; }
+.casillaMensaje{
+  margin-top: 2rem;
+}  
 
 /*MOBILE*/
 @media screen and (max-width: 850px) {
