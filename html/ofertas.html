@@ -104,14 +104,15 @@
       </nav>
     </header>
 
-    <main>
-      <section class="apartadoOferta" data-aos="fade-left">
+     <main>
+      <section class="apartadoOferta" data-aos="fade-left"> 
         <div>
           <h3>
             ¡En este mes, aprovecha nuestra increible rebaja de precios y
             llevate lo mejor en indumentaria urbana para deslumbrar al mundo!
           </h3>
         </div>
+         
 
         <div>
           <img
@@ -122,6 +123,7 @@
         </div>
       </section>
 
+      <section class="cards-ofertas"> 
       <div class="container">
         <div id="fila_prueba" style="background-color:white">
             <div>
@@ -129,12 +131,40 @@
             </div>
         </div>
       <div>
-        <div id="prods" class="row ">
+
+        
+      
+        <div id="prods" class="col-xl-3 col-md-6 col-sm-12 row">
+          
+    
             <!-- Aqui los productos -->
         </div>
-        <p></p>
-        </div>
       </div>
+      <div class="tablaProductos">
+        <h4>Tu compra:</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="tablabody">
+                <!-- aqui tabla carrito -->
+                
+            </tbody>
+        </table>
+            <h4 id="total">Total a pagar $:</h4>
+            <button id="finalizar" class="btn btn-success">Finalizar Compra</button>
+    </div>
+        </div>
+        
+    </div>
+</div>
+</section> 
+  
         <!--
       <section>
          CARDS
@@ -278,9 +308,9 @@
         </div>
       </section>
     -->
-    </main>
+</main>
 
-    <footer class="footer">
+<footer class="footer">
       <div class="contenedorFooter">
         <a href="https://www.instagram.com">
           <span class="iconoFooter"
@@ -303,7 +333,7 @@
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
-    <script
+     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
@@ -318,8 +348,16 @@
       AOS.init();
     </script>
     <!-- JS -->
-    <script src="codigo.js"></script>
-    <script>src="script.js"</script>
-    <script>src="productos.js"</script>
-  </body>
+    <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <!-- aos -->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <!-- sweet alert -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Luxon -->
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+  <!-- Mi script -->
+  <script src="productos.js"></script>
+  <script src="script.js"></script>
 </html>

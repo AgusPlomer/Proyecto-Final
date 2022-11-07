@@ -1,66 +1,8 @@
-const productosOferta=[
-    {
-      id:1,
-      articulo:"Buzo oversize Nike",
-      foto:"/img-ofertas/buzo-nike-oversize-crema-removebg-preview.png",
-      precio: 17000
-  
-    },
-    {
-      id:2,
-      articulo:"Gorra nike blanca",
-      foto:"/img-ofertas/gorra-nike-blanca-removebg-preview.png",
-      precio: 4200
-  
-    },
-    {
-      id:3,
-      articulo:"Jordan low 1",
-      foto:"/img-ofertas/jordan-low-1-removebg-preview.png",
-      precio: 45000
-  
-    },
-    {
-      id:4,
-      articulo:"Jordan air retro 4 negras",
-      foto:"/img-ofertas/jordan-retro-4-removebg-preview.png",
-      precio: 53000
-  
-    },
-    {
-      id:5,
-      articulo:"Jean levis hombre",
-      foto:"/img-ofertas/levis-hombre-removebg-preview.png",
-      precio: 18000
-  
-    },
-    {
-      id:6,
-      articulo:"Medias 3/4 nike",
-      foto:"/img-ofertas/medias-nike-variadas-removebg-preview.png",
-      precio: 1300
-  
-    },
-    {
-      id:7,
-      articulo:"Remera oversize nike",
-      foto:"/img-ofertas/remeron-oversize-oferta-modificada.png",
-      precio: 3700
-  
-    },
-    {
-      id:8,
-      articulo:"Riñonera negra simple",
-      foto:"/img-ofertas/riñonera-simple-modificada.png",
-      precio: 2500
-  
-    },
-  ]
 
 let totalCarrito;
 let contenedor = document.getElementById("prods");
 let botonFinalizar = document.getElementById("finalizar");
-let tabla = document.getElementById ("tabla");
+let tabla = document.getElementById ("tablabody");
 
 //carrito compras:
 
@@ -70,13 +12,14 @@ const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 //Renderizacion de Productos:
 
 function renderizarProds(){
-    for(const producto of productosOferta){
+    for(const producto of productos){
         contenedor.innerHTML += `
-            <div class="card col-md-2">
-                <img src=${producto.foto} class="card-img-top" alt="...">
+        <div class="row ubicacionCards">
+            <div class="card col-xl-3 col-md-6 col-sm-12 row ubicacionCards cardRow" style="width: 15rem">
+                <img src=${producto.foto} class="card-img-top imgOfertas" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${producto.id}</h5>
-                    <p class="card-text">${producto.articulo}</p>
+                    <p class="card-text">${producto.nombre}</p>
                     <p class="card-text">$ ${producto.precio}</p>
                     <button id="btn${producto.id}" class="btn btn-primary">Comprar</button>
                     
@@ -85,7 +28,7 @@ function renderizarProds(){
         `;
     }
     //Evento boton comprar 
-    productosOferta.forEach(producto => {        
+    productos.forEach(producto => {        
         document.getElementById(`btn${producto.id}`).addEventListener("click",function(){
             agregarAlCarrito(producto);
         });
@@ -131,11 +74,14 @@ function agregarAlCarrito(productoComprado){
 }
 
 
-botonFinalizar.onclick = () => {
+botonFinalizar.addEventListener('click', function(){
     carrito = [];
+    
     document.getElementById("tablabody").innerHTML="";
     let infoTotal = document.getElementById("total");
     infoTotal.innerText="Total $: ";
+});
+  
 
 
     //Toastify
@@ -156,35 +102,35 @@ Toastify({
     
     localStorage.removeItem("carrito");
     
-}
+
 
 
   
   //agrego una funcion para actualizar el carrito:
 
-  function actualizarCarrito(){
-    console.table(carrito);
-        let aux = '';
-        carrito.forEach((producto) => {
-            aux = aux + 
-            `
-            <tr>
-            <td>${producto.id}</td>
-            <td>${producto.nombre}</td>
-            <td>${producto.precio}</td>
-            <td><button onClick = "eliminarDelCarrito(${producto.id})" class="btn btn-primary"> Eliminar del Carrito </button></td>
-        </tr>
-            `;
-        })
-        tablaBody.innerHTML = aux;
+//   function actualizarCarrito(){
+//     console.table(carrito);
+//         let aux = '';
+//         carrito.forEach((producto) => {
+//             aux = aux + 
+//             `
+//             <tr>
+//             <td>${producto.id}</td>
+//             <td>${producto.articulo}</td>
+//             <td>${producto.precio}</td>
+//             <td><button onClick = "eliminarDelCarrito(${producto.id})" class="btn btn-primary"> Eliminar del Carrito </button></td>
+//         </tr>
+//             `;
+//         })
+//         tablaBody.innerHTML = aux;
         
-        totalCarrito = carrito.reduce((acumulador,producto)=> acumulador + producto.precio,0);
-        let infoTotal = document.getElementById("total");
-        infoTotal.innerText="Total a pagar $: "+totalCarrito;
+//         // totalCarrito = carrito.reduce((acumulador,producto)=> acumulador + producto.precio,0);
+//         let infoTotal = document.getElementById("total");
+//         infoTotal.innerText="Total a pagar $: "+totalCarrito;
     
-        localStorage.setItem("carrito", JSON.stringify(carrito));
+//         localStorage.setItem("carrito", JSON.stringify(carrito));
 
-        }
+//         }
     
     
   
@@ -193,5 +139,9 @@ Toastify({
 const eliminarDelCarrito = (id) => {
     const producto = carrito.find((producto) => producto.id === id);
     carrito.splice(carrito.indexOf(producto), 1);
-    actualizarCarrito();
+    totalCarrito = carrito.reduce((acumulador,producto)=> acumulador + producto.precio,0);
+    let infoTotal = document.getElementById("total");
+    infoTotal.innerText="Total a pagar $: "+totalCarrito;
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
   };
