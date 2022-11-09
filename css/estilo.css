@@ -169,6 +169,19 @@ h3 {
   justify-content: center;
   font-family: 'Josefin Sans', sans-serif; }
 
+.tablaProductos{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: black 4px solid;
+  border-radius: 3px;
+  
+}
+
+.boton {
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
+
 /**************************** SECCION UBICACIÓN ***************************/
 .flexUbicacion div {
   display: flex;
@@ -213,10 +226,6 @@ h3 {
 .forms, .divCiudad {
   margin-top: 1rem;
   margin-bottom: 1rem; }
-
-.boton {
-  margin-bottom: 4rem;
-  margin-top: 2rem; }
 
 /*MOBILE*/
 @media screen and (max-width: 850px) {
