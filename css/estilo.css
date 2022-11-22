@@ -135,8 +135,7 @@ h3 {
 
 /* CARDS */
 .cardRow {
-  margin: 20px;
-  border: 4px black solid; }
+  justify-content:space-around;}
 
 .imgOfertas {
   width: 12rem;
@@ -145,7 +144,20 @@ h3 {
 
 .card-body {
   margin: auto;
-  padding: auto; }
+  padding: auto;
+}
+
+.card{
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 4px black solid;
+  border-radius: 3px;
+  width: 21rem;
+  padding: 2rem;
+
+  
+}  
 
 .ubicacionCards {
   display: flex;
@@ -154,20 +166,31 @@ h3 {
 
 .btn {
   width: 10rem;
+  border: 2px black solid;
   margin: auto;
   background-color: #E21717;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+ font-family:'DynaPuff', cursive ; }
 
 .card-title {
   display: flex;
   justify-content: center;
-  font-family: 'Bebas Neue', cursive; }
+  font-family: 'DynaPuff', cursive;
+  background-color: #E21717; }
 
 .card-text {
   display: flex;
   justify-content: center;
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: 'DynaPuff', cursive;
+  font-size: 21px ; 
+  justify-content:center;
+  align-content: center;
+}
+
+  
+  
+  
 
 .tablaProductos{
   margin-top: 2rem;
@@ -180,7 +203,9 @@ h3 {
 
 .boton {
   margin-bottom: 2rem;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  font-family: 'DynaPuff', cursive;
+color: black;}
 
 /**************************** SECCION UBICACIÓN ***************************/
 .flexUbicacion div {

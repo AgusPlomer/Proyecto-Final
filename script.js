@@ -18,8 +18,8 @@ function mostrarProductos() {
       for (let i = 0; i < productos.length; i++) {
         html = html +
           `
-
-                          <div class="card col-md-2">
+                         <div class="row">
+                           <div class="col-xl-3 col-md-6 col-sm-12 card row">
                             <img src=${productos[i].foto} class="card-img-top" alt="...">
                             <div class="card-body">
                             <h5 class="card-title">${productos[i].id}</h5>
@@ -28,6 +28,7 @@ function mostrarProductos() {
                             <button onclick="agregarAlCarrito(${productos[i].id});" type="button" class="btn btn-warning btn-lg">Comprar</button>
      
                             </div>
+                           </div>
                           </div>
            `;
       }
@@ -101,7 +102,7 @@ function calcularPrecioTotal() {
   precioTotal = carrito.reduce((acumulador, productos) => {
     return (acumulador += productos.precio);
   }, 0);
-  document.getElementById('total').innerHTML = 'total: $' + precioTotal;
+document.getElementById('total').innerHTML = 'Su total a pagar es: ' + precioTotal + '$';
   saveLocal();
   console.log(precioTotal);
 }

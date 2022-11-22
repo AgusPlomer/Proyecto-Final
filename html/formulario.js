@@ -4,7 +4,7 @@ let apellido=document.getElementById('apellido');
 let correo=document.getElementById('correo');
  let button=document.getElementById('boton');
 
-let datos=JSON.parse(localStorage.setItem('datosform'));
+let datos=JSON.parse(localStorage.getItem('datosform'))||[];
 
 if(datos== null){
 localStorage.setItem('datosform','[]');
@@ -26,5 +26,5 @@ console.log('fdsf')
 
 };
 
-// let button=document.getElementById('boton');
-// button.addEventListener('click',guardardatos);
+ let button=document.getElementById('boton');
+ button.addEventListener('click',guardardatos);
